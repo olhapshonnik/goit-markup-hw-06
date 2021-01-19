@@ -995,3 +995,27 @@ footer {
   line-height: 1.55;
   color: var(--text-color);
 }
+
+/*input,
+button,
+textarea {
+  display: block;
+  font-family: inherit;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}*/
+.textarea {
+  resize: none;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: block;
+}
