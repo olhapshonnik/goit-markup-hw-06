@@ -1015,7 +1015,16 @@ label {
 .form-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .form {
   display: block;
+}
+
+.icon-modal {
+  width: 12px;
+  height: 12px;
+
+  position: relative;
+  transform: translateY(50%);
 }
