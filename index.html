@@ -471,10 +471,10 @@
                 <label for="mail">
                     <div class="name-modal">Почта</div> 
                 </label>
-                <input class="form-input" type="mail" name="mail" id="mail"/>
-                <svg class="icon-modal">
-                    <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>
+                   <input class="form-input" type="mail" name="mail" id="mail" />
+                    <svg class="icon-modal">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>
             </div>
             
            <div class="form-field comments">
@@ -487,19 +487,32 @@
           
             
             <div class="chekbox">
-                <input class="form-checkbox" class="form-input" type="checkbox" name="" value="text" id="text" />
-                <label for="text" class="chek-mark"> Соглашаюсь с рассылкой и принимаю
-                    <a href="#" class="agreement">Условия договора</a>
-                    </label>
-            </div>
-            <!--role="group"-->
+                <label for="text" class="chek-mark">
+                <input class="form-checkbox visually-hidden"
+                 class="form-input"
+                  type="checkbox" 
+                  name="" 
+                  value="text"
+                   id="text"/>
+                <svg class="vector">
+                    <use href="./images/sprite.svg#icon-vector"></use>
+                </svg>
+                
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="agreement">Условия договора</a>
+                    
+                </label>
+                
+                   
+                  
+                </div>
+           
             <div></div>
             <button class="button-send" type="submit">Отправить</button>
             </form>
         </div>
             
       
-            visually-hidden
         
     </div>
     </div>
@@ -508,3 +521,4 @@
    
 </body>
 </html>
+<!--role="group"-->

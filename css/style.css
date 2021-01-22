@@ -1009,11 +1009,15 @@ label {
   margin-bottom: 10px;
 }*/
 
+
+
+
 .modal {
   padding: 40px 40px 40px 40px;
 }
 .input {
   width: 100%;
+  
 }
 
 .form-field {
@@ -1021,6 +1025,8 @@ label {
   flex-direction: column;
 
   width: 448px;
+ 
+  
 }
 
 .text-modal {
@@ -1035,18 +1041,25 @@ label {
   margin-bottom: 12px;
 }
 .name-modal {
+
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
 
   color: #757575;
   margin-bottom: 4px;
+  
+
 }
 .form-input {
   padding-left: 42px;
-  transform: translateY(-50%)
+  font-size: 14px;
+  line-height: 1.17;
+  
   margin-bottom: 10px;
-  height: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+ 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1058,6 +1071,7 @@ label {
 }
 .form-input:focus + .icon-modal {
   fill: #2196f3;
+  border-color: #2196f3;
 }
 .textarea {
   resize: none;
@@ -1080,20 +1094,39 @@ label {
 
   color: #757575;
 }
-.chek-mark::before {
+.vector::after {
   content: "";
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 7px;
+  /*margin-right: 7px;*/
+  fill: none;
 
   background-color: #ffffff;
 
   transition-property: background-color, border-color;
   transition-duration: 250ms, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.vector {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  fill: none;
+}
+.form-checkbox:checked + .vector{
+   fill: #ffffff;
+   background-color: #2196f3;
+   border: #2196f3;
+}
+.icon-vector {
+  width: 11px;
+  height: 8px;
+
 }
 .agreement {
   display: inline-block;
@@ -1110,8 +1143,8 @@ label {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(50%);
-  left: 12px;
+ 
+  left: 15px;
   width: 12px;
   height: 12px;
 }
@@ -1119,8 +1152,8 @@ label {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(50%);
-  left: 12px;
+  
+  left: 15px;
   width: 13px;
   height: 13px;
 }
@@ -1128,14 +1161,17 @@ label {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(50%);
-  left: 12px;
+  
+  left: 15px;
   width: 15px;
   height: 12px;
+  fill: #212121;
+ 
 }
 .form-field {
   position: relative;
 }
+
 .button-send {
   display: block;
   margin-right: auto;
