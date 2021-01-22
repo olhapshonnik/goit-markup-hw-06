@@ -1008,23 +1008,159 @@ label {
   display: block;
   margin-bottom: 10px;
 }*/
-.textarea {
-  resize: none;
+
+.modal {
+  padding: 40px 40px 40px 40px;
+}
+.input {
+  width: 100%;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+
+  width: 448px;
 }
-.form {
+
+.text-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.name-modal {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+  margin-bottom: 4px;
+}
+.form-input {
+  padding-left: 42px;
+  transform: translateY(-50%)
+  margin-bottom: 10px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+  cursor: pointer
+}
+.form-input:focus + .icon-modal {
+  fill: #2196f3;
+}
+.textarea {
+  resize: none;
+  margin-bottom: 20px;
+  height: 120px;
+  width: 448px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.chekbox {
   display: block;
+  margin-bottom: 30px;
+}
+.chek-mark {
+  font-size: 14px;
+  line-height: 1/71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.chek-mark::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+
+  background-color: #ffffff;
+
+  transition-property: background-color, border-color;
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.agreement {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  text-decoration: underline;
+  color: #2196f3;
 }
 
 .icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%);
+  left: 12px;
   width: 12px;
   height: 12px;
-
-  position: relative;
+}
+.icon-modal.phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translateY(50%);
+  left: 12px;
+  width: 13px;
+  height: 13px;
+}
+.icon-modal.envelope {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%);
+  left: 12px;
+  width: 15px;
+  height: 12px;
+}
+.form-field {
+  position: relative;
+}
+.button-send {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  cursor: pointer;
+
+  padding: 10px 55px 10px 56px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+
+  /*justify-content: center;
+
+  align-items: center;
+  text-align: center;*/
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.form-checkbox {
+  visually-hidden
 }
