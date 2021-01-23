@@ -910,14 +910,57 @@ footer {
 }
 
 .footer-social {
-  margin-left: 70px;
+  margin-left: auto;
 }
+.tex-subscribe {
+  margin-top: 0;
+  margin-bottom: 20px;
 
-/*.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}*/
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
+.input-subscribe {
+  padding-top: 15px;
+  padding-right: 158px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+.buttom-subscribe {
+  padding: 10px 62px 10px 29px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.icon-telegram {
+  width: 24px;
+  height: 24px;
+}
+.icon-telegram {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+}
+.buttom-subscribe {
+  position: relative;
+}
+.subscribe {
+  margin-left: auto;
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -1089,33 +1132,7 @@ footer {
   padding-left: 125px;
   padding-right: 124px;
 }
-/*input,
-button,
-textarea {
-  display: block;
-  font-family: inherit;
-  padding: 10px;
-}
 
-label {
-  display: block;
-  margin-bottom: 10px;
-}*/
-
-/*.form-field {
-  display: flex;
-  flex-direction: column;
-
-  width: 448px;
-
-}*/
-/*.form-label {
-  display: flex;
-  flex-direction: column;
-}
-
-
-  }*/
 .placeholder {
   padding-left: 30px;
 }
@@ -1152,7 +1169,6 @@ label {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  /*margin-right: 7px;*/
   fill: none;
 
   background-color: #ffffff;
