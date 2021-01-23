@@ -8,6 +8,7 @@
   --background-hero-color: #2f303a;
   --color-icon: #afb1b8;
   --border-portfolio: #eeeeee;
+  --modal-button: #188ce8;
 }
 /* цвет основного текста #212121 */
 
@@ -723,7 +724,7 @@ a {
 }
 
 .portfolio-card {
-  background: #ffffff;
+  background: var(--text-color);
   border-right: 1px solid var(--border-portfolio);
   border-bottom: 1px solid var(--border-portfolio);
   border-left: 1px solid var(--border-portfolio);
@@ -922,7 +923,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 .input-subscribe {
   padding-top: 15px;
@@ -935,15 +936,30 @@ footer {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2f303a;
+  background-color: var(--background-hero-color);
 }
 .buttom-subscribe {
   padding: 10px 62px 10px 29px;
 
-  background: #2196f3;
+  background: var(--accent-color);
+  border: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+.send-subscribe {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--text-color);
 }
 .icon-telegram {
   width: 24px;
@@ -1000,10 +1016,10 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: var(--backround-color);
 }
 .backdrop.is-hidden .closed {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .description {
   position: relative;
@@ -1054,7 +1070,7 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -1062,7 +1078,7 @@ footer {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--secondare-text-color);
   margin-bottom: 4px;
 }
 
@@ -1081,12 +1097,12 @@ footer {
 .form-input:focus,
 .textarea:focus {
   outline: none;
-  border-color: #2196f3;
+  border-color: var(--accent-color);
   cursor: pointer;
 }
 .form-input:focus + .input-image {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .cont {
@@ -1112,10 +1128,10 @@ footer {
 .button-send {
   display: block;
   padding: 10px 55px 10px 56px;
-  background: #188ce8;
+  background: var(--modal-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: #188ce8;
+  border: var(--modal-button);
 }
 .send {
   font-weight: bold;
@@ -1127,7 +1143,7 @@ footer {
 
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 .buttom {
   padding-left: 125px;
@@ -1161,7 +1177,7 @@ footer {
   line-height: 1/71;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondare-text-color);
 }
 .vector::after {
   content: "";
@@ -1172,7 +1188,7 @@ footer {
   border-radius: 2px;
   fill: none;
 
-  background-color: #ffffff;
+  background-color: var(--text-color);
 
   transition-property: background-color, border-color;
   transition-duration: 250ms, 250ms;
@@ -1187,9 +1203,9 @@ footer {
   fill: none;
 }
 .form-checkbox:checked + .vector {
-  fill: #ffffff;
-  background-color: #2196f3;
-  border: #2196f3;
+  fill: var(--text-color);
+  background-color: var(--accent-color);
+  border: var(--accent-color);
 }
 .icon-vector {
   width: 11px;
@@ -1203,5 +1219,5 @@ footer {
   letter-spacing: 0.03em;
 
   text-decoration: underline;
-  color: #2196f3;
+  color: var(--accent-color);
 }
